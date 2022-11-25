@@ -1,0 +1,40 @@
+{
+  "name": "teko_tool",
+  "version": "1.0.0",
+  "description": "Tool for teko company",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "type": "commonjs",
+  "keywords": [
+    "js",
+    "electron"
+  ],
+  "author": "vungocthach",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.3.1",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "app-name",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/icon/win.ico",
+      "requestedExecutionLevel": "requireAdministrator"
+    }
+  },
+  "nsis": {
+    "installerIcon": "src/icon/win.ico",
+    "uninstallerIcon": "src/icon/win.ico",
+    "uninstallDisplayName": "downloadClient",
+    "license": "license.txt",
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true
+
+  }
+}
