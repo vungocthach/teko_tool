@@ -14,9 +14,14 @@
   ],
   "author": "vungocthach",
   "license": "ISC",
+  "dependencies": {
+    "electron": "^21.3.1"
+  },
   "devDependencies": {
-    "electron": "^21.3.1",
-    "electron-builder": "^23.6.0"
+    "electron-builder": "^23.6.0",
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
   },
   "build": {
     "appId": "app-name",
@@ -35,6 +40,5 @@
     "license": "license.txt",
     "oneClick": false,
     "allowToChangeInstallationDirectory": true
-
   }
 }
